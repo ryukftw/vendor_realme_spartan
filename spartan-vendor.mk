@@ -700,6 +700,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spartan/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/realme/spartan/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/realme/spartan/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/realme/spartan/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/realme/spartan/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/realme/spartan/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/realme/spartan/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
@@ -724,6 +725,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spartan/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_21623.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dsc_cmd_21623.xml \
     vendor/realme/spartan/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml \
     vendor/realme/spartan/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml \
+    vendor/realme/spartan/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/realme/spartan/proprietary/vendor/etc/media_codecs_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona.xml \
+    vendor/realme/spartan/proprietary/vendor/etc/media_codecs_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona_vendor.xml \
     vendor/realme/spartan/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/realme/spartan/proprietary/vendor/etc/media_profiles_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kona.xml \
     vendor/realme/spartan/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
@@ -863,6 +867,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spartan/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    vendor.dolby.hardware.dms@2.0 \
     btaudio_offload_if \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -892,6 +897,8 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libconfigdb \
+    libdapparamstorage \
+    libdeccfg \
     libdiag \
     libdsi_netctrl \
     libdsutils \
@@ -934,6 +941,9 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker_stub \
     libsdsprpc \
     libsoc_helper \
+    libstagefright_soft_ac4dec \
+    libstagefright_soft_ddpdec \
+    libstagefrightdolby \
     libsysmon_cdsp_skel \
     libthermalclient \
     libvppclient \
@@ -941,6 +951,11 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvpplibrary \
     libxml \
+    libeffectproxy \
+    libhwdap \
+    libswdap \
+    libswgamedap \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.oplus.hardware.extcamera@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -1143,6 +1158,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayqos \
     libdisplayskuutils \
+    libdlbdsservice \
     libdpmqmihal \
     libdrmfs \
     libdrmtime \
@@ -1268,6 +1284,7 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.dolby.hardware.dms@2.0-impl \
     vendor.oplus.hardware.cameraextension-V1-ndk_platform \
     vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
     vendor.oplus.hardware.cammidasservice@1.0 \
@@ -1643,7 +1660,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
     ImsRcsService \
     QtiTelephonyService \
+    DaxUI \
     WfdService \
+    daxService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
@@ -1678,6 +1697,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.display.composer-service \
