@@ -295,6 +295,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_dax_dolby_v3_6.xml",
+	owner: "realme",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_oplusSensor.xml",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplusSensor.xml",
@@ -307,6 +316,15 @@ prebuilt_etc_xml {
 	name: "manifest_oplus_fingerprint.xml",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vibrator-default.xml",
+	owner: "realme",
+	src: "proprietary/odm/etc/vintf/manifest/vibrator-default.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
@@ -368,11 +386,3 @@ install_symlink {
 	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
-prebuilt_etc_xml {
-	name: "vibrator-default",
-	owner: "realme",
-	src: "proprietary/odm/etc/vintf/manifest/vibrator-default.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
