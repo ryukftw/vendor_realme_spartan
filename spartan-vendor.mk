@@ -502,7 +502,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spartan/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/realme/spartan/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/realme/spartan/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
-    vendor/realme/spartan/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
     vendor/realme/spartan/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/realme/spartan/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/realme/spartan/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
