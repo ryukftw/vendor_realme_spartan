@@ -1421,9 +1421,11 @@ PRODUCT_PACKAGES += \
     libimscamera_jni \
     libimsmedia_jni \
     libwfdnative \
+    vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.imsrtpservice@3.0 \
+    vendor.qti.imsrtpservice@3.1 \
     libDeVIS \
     libaiboost \
     libaiboost_hexagon \
@@ -1569,6 +1571,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_portraitSN_hvx_stub \
     libarcsoft_portrait_super_night_raw \
     libarcsoft_preview_antibanding \
+    libarcsoft_qnnhtp \
     libarcsoft_scbokeh_image \
     libarcsoft_scbokeh_video \
     libarcsoft_smart_denoise \
