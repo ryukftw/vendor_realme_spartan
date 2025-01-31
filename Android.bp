@@ -18586,7 +18586,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "liblog",
                 "libxml2",
                 "libdapparamstorage_v3_6",
@@ -18605,7 +18605,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "liblog",
                 "libxml2",
                 "libdapparamstorage_v3_6",
@@ -19027,7 +19027,7 @@ cc_prebuilt_library_shared {
                 "libdeccfg_v3_6",
                 "libstagefright_omx",
                 "libstagefright_softomx",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libutils",
                 "libcutils",
                 "libmedia_omx",
@@ -19057,7 +19057,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libstagefright_softomx",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
                 "libc++",
