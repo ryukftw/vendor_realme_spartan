@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/spartan
 
 PRODUCT_COPY_FILES += \
+    vendor/realme/spartan/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/realme/spartan/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/realme/spartan/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
     vendor/realme/spartan/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
@@ -498,6 +499,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spartan/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
     vendor/realme/spartan/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/realme/spartan/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
+    vendor/realme/spartan/proprietary/odm/etc/init/vibrator-default.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vibrator-default.rc \
     vendor/realme/spartan/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/realme/spartan/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/realme/spartan/proprietary/odm/etc/sensor/config/kona_qrd_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_ak991x_0.json \
@@ -879,6 +881,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vibrator.default \
     vulkan.adreno \
     libC2D2 \
     libCB \
@@ -1412,6 +1415,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     libDeVIS \
+    libaacvibrator \
     libaiboost \
     libaiboost_hexagon \
     libaiboost_nnlib_sr \
@@ -1427,9 +1431,11 @@ PRODUCT_PACKAGES += \
     libqtigef_odm \
     libhwdap_v3_6 \
     libswdap_v3_6 \
+    vendor.aac.hardware.richtap.vibrator-V1-ndk_platform \
     vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     vendor.dolby_v3_6.hardware.dms360@2.0 \
     vendor.oplus.hardware.orms@1.0 \
+    awinic.haptic.effect \
     libstagefright_soft_ddpdec \
     libstagefrightdolby \
     anc.hal \
@@ -1676,6 +1682,7 @@ PRODUCT_PACKAGES += \
     manifest_dax_dolby_v3_6.xml \
     manifest_oplusSensor.xml \
     manifest_oplus_fingerprint.xml \
+    vibrator-default.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -1748,6 +1755,7 @@ PRODUCT_PACKAGES += \
     vendor.dolby_v3_6.hardware.dms360@2.0-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.oplus.hardware.oplusSensor@1.0-service \
+    vendor.oplus.hardware.vibrator-service \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.secure_element@1.2-service \
     init.oplus.fingerprints \
