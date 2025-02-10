@@ -20257,7 +20257,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libc",
                 "libm",
-                "libstdc++",
+                "libstdc++_vendor",
                 "libdl",
             ],
         },
@@ -21391,7 +21391,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libz",
                 "libm",
-                "libstdc++",
+                "libstdc++_vendor",
                 "libdl",
                 "libc",
             ],
@@ -21665,7 +21665,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libdl",
-                "libstdc++",
+                "libstdc++_vendor",
                 "libcdsprpc",
                 "libc++_shared",
                 "libm",
@@ -23809,27 +23809,6 @@ cc_prebuilt_library_shared {
                 "libGLESv2",
                 "libEGL",
                 "libm",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstdc++",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libstdc++.so",
-            ],
-            shared_libs: [
                 "libc",
             ],
         },
