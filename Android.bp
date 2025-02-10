@@ -22978,6 +22978,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liboemcrypto",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libQSEEComAPI",
+                "libhidlbase",
+                "libcpion",
+                "libminkdescriptor",
+                "libcutils",
+                "libtrustedapploader",
+                "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libop-ai-beauty-body-detection",
     owner: "realme",
     strip: {

@@ -1578,6 +1578,7 @@ PRODUCT_PACKAGES += \
     libml_util \
     libmotionblur \
     libmpbase \
+    liboemcrypto \
     libop-ai-beauty-body-detection \
     libop-ai-beauty-faceretouch-cn \
     liboplus_service \
