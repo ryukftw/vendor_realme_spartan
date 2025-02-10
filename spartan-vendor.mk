@@ -915,7 +915,6 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libgpudataproducer \
     libgsl \
-    libgui1_vendor \
     libidl \
     libllvm-glnext \
     libllvm-qcom \
