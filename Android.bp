@@ -14,10 +14,10 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
+		: {
 			srcs: ["proprietary/vendor/lib/libfastcvopt.so"],
 		},
-		android_arm64: {
+		: {
 			srcs: ["proprietary/vendor/lib64/libfastcvopt.so"],
 		},
 	},
@@ -34,10 +34,10 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
+		: {
 			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
 		},
-		android_arm64: {
+		: {
 			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
