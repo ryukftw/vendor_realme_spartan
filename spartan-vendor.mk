@@ -587,7 +587,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spartan/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin \
     vendor/realme/spartan/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin \
     vendor/realme/spartan/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin \
-    vendor/realme/spartan/proprietary/odm/lib64/libdav1d.so.4:$(TARGET_COPY_OUT_ODM)/lib64/libdav1d.so.4 \
     vendor/realme/spartan/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/realme/spartan/proprietary/odm/vendor/firmware/ancap64.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b00 \
     vendor/realme/spartan/proprietary/odm/vendor/firmware/ancap64.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b01 \
@@ -1462,7 +1461,6 @@ PRODUCT_PACKAGES += \
     libAncSegmentSdk \
     libBokehPre \
     libCOppLceTonemapAPI \
-    libCaptureBokeh \
     libEIS \
     libFDClite \
     libFaceBeautyCap \
@@ -1492,7 +1490,6 @@ PRODUCT_PACKAGES += \
     libSonyIMX471RmscLibrary \
     libStarMode \
     libSuperRaw \
-    libSuperTextWrapper \
     libTrafficMode \
     libVDBayerHDR \
     libVDBlurless \
@@ -1504,7 +1501,6 @@ PRODUCT_PACKAGES += \
     libVideoEnhance \
     libWaterMark \
     libWaterMode \
-    libXDocProcessSDK \
     libYTCommon \
     lib_rectify \
     libaisal \
