@@ -955,7 +955,7 @@ PRODUCT_PACKAGES += \
     libhwdap \
     libswdap \
     libswgamedap \
-    vendor.dolby.hardware.dms@2.0 \
+    vendor.dolby.hardware.dms@2.0_vendor \
     vendor.oplus.hardware.extcamera@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
