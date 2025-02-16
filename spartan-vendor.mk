@@ -1660,9 +1660,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
     ImsRcsService \
     QtiTelephonyService \
-    DaxUI \
     WfdService \
-    daxService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
